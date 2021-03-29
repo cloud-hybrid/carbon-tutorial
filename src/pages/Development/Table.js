@@ -13,7 +13,9 @@ import {
   TableExpandedRow,
 } from "carbon-components-react";
 
-const RepoTable = ({ rows, headers }) => {
+const Exports = {};
+
+Exports["Table"] = ({ rows, headers }) => {
   const getRowDescription = rowId => {
     const row = rows.find(({ id }) => id === rowId);
     return row ? row.description : "";
@@ -65,4 +67,4 @@ const RepoTable = ({ rows, headers }) => {
   );
 };
 
-export default RepoTable;
+export default Exports;
